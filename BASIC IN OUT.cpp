@@ -1,11 +1,7 @@
-#include<stdio.h>
-int main(){
+BEGIN
+    DECLARE panjang AS INTEGER = 5
+    DECLARE lebar AS INTEGER = 3
 
-   int panjang = 5;
-   int lebar = 3;
+    PRINT (panjang * lebar)
 
-   printf("%d", panjang * lebar);
-  
-
-    return 0;
-}
+END
