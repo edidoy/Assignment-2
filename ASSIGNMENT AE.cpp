@@ -1,18 +1,18 @@
-#include<stdio.h>
-int main(){
-    int a, b;
+BEGIN
+    DECLARE a AS INTEGER
+    DECLARE b AS INTEGER
+    DECLARE luas AS LONG LONG
 
-    printf("SELAMAT DATANG DI KALKULATOR LUAS PERSEGI PANJANG.\n");
-    printf("SILAHAKAN MASUKKAN PANJANG DAN LEBAR DARI PERSEGI PANJANG YANG INGIN ANDA HITUNG.\n");
+    PRINT "SELAMAT DATANG DI KALKULATOR LUAS PERSEGI PANJANG."
+    PRINT "SILAHAKAN MASUKKAN PANJANG DAN LEBAR DARI PERSEGI PANJANG YANG INGIN ANDA HITUNG."
 
-    printf("PANJANG : ");
-    scanf("%d", &a);getchar();
+    PRINT "PANJANG : "
+    INPUT a
 
-    printf("LEBAR : ");
-    scanf("%d", &b);getchar();
+    PRINT "LEBAR : "
+    INPUT b
 
-    long long luas = (long long)a * b;
+    SET luas = a * b
 
-    printf("LUAS PERSEGI PANJANG : %lld\n", luas);
-    return 0;
-}
+    PRINT "LUAS PERSEGI PANJANG : " + luas
+END
